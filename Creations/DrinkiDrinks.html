@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍹 Drinkidrinks</title>
+  </head>
+  <style>
+    body {
+      background: #f7faff;
+      display: block;
+      margin: 8px;
+    }
+    div {
+      text-align: center;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(
+        to top,
+        rgba(155, 70, 224, 1) 33%,
+        rgba(235, 124, 200, 1) 86%
+      );
+      padding: 30px;
+      margin: 50px auto;
+      border: #d083e3;
+      border-radius: 15px;
+      width: 70%;
+    }
+    h1 {
+      color: #f7faff;
+      font-size: 2.5em;
+      border: 2px solid #f7faff;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 0px 30%;
+    }
+    h2 {
+      color: #f7faff;
+    }
+    p {
+      color: #f7faff;
+      margin: 30px 0px;
+      font-size: 1.2em;
+      line-height: normal;
+    }
+    a {
+      cursor: pointer;
+    }
+    button {
+      text-shadow: 2px 2px 5px rgba(74, 33, 108, 1);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transition: all 200ms ease;
+      cursor: pointer;
+      color: #f7faff;
+      border: 5px dotted #f7faff;
+      border-radius: 10px;
+    }
+    button:hover {
+      background: rgb(216, 101, 180);
+    }
+    .drinkimage {
+      width: 220px;
+      height: 320px;
+      padding: 10px 5px;
+    }
+    .drinksMatter {
+      color: #f7faff;
+      font-size: 1em;
+    }
+    .whatDrinkButton {
+      font-size: 20px;
+      font-weight: 600;
+      padding: 15px 20px;
+      margin: 20px auto 20px;
+      background: rgb(176, 100, 237);
+    }
+    .whatDrinkButton:hover {
+      background: rgba(155, 70, 224, 1);
+    }
+    .contactButton {
+      font-size: 25px;
+      padding: 15px 20px;
+      margin: 40px auto 20px;
+      background: rgba(235, 124, 200, 1);
+    }
+  </style>
+  <body>
+    <div class="floaty">
+      <h1>
+        Drinkidrinks make you happy! <br />
+        🍹☕🥃
+      </h1>
+      <h2>They are good for you!</h2>
+      <button class="whatDrinkButton">What is my Drinkidrink?</button>
+      <hr />
+      <img
+        class="drinkimage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/024/original/drinkidrink.jpg?1702475514"
+        alt="2 fancy violet drinks"
+      />
+      <img
+        class="drinkimage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/025/original/drinkidrink_hot.jpg?1702475600"
+        alt="a nice cup of hot chocolate"
+      />
+      <img
+        class="drinkimage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/026/original/Strawberry-Lime-Rose-Sangria.jpg?1702475785"
+        alt="2 glasses of strawberry sangria"
+      />
+      <img
+        class="drinkimage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/105/original/gl%C3%B6gg.jpg?1702506823"
+        alt="a glasses of a darkred christmas beverage"
+      />
+      <hr />
+      <p>
+        <em>Drinkidrinks</em>, with their artful blends and exquisite
+        presentation, elevate the act of imbibing to a delightful experience.
+        These libations transcend mere refreshment; they are a
+        <em>celebration of craftsmanship and creativity</em>. <br />
+        From the meticulously crafted cocktails that dance on the palate to the
+        cozy warmth that excudes a homemade hot chocolate, each sip is a journey
+        into sensory pleasure. The allure lies not only in the flavors but also
+        in the ambiance they create a toast to sophistication, indulgence, and
+        the joy of savoring life's finer moments. In the world of drinkidrinks,
+        every glass is a canvas, and every pour is a stroke of liquid artistry.
+      </p>
+      <br />
+      <span>
+        <a
+          class="drinksMatter"
+          href="https://www.lifemaghealth.com/why-its-healthy-and-important-to-treat-yourself/"
+          target="_blank"
+          >Why Drinkidrinks matter</a
+        >
+      </span>
+      <br />
+      <button class="contactButton">
+        <strong>LET'S GO,</strong><br />
+        MAKE SOME DRINKIDRINKS!
+      </button>
+    </div>
+    <script>
+      function contact() {
+        let name = prompt("What is your first name?");
+        alert(
+          "Thanks, " +
+            name +
+            "! We'll be in touch, until then: make sure to treat yourself to some Drinkidrinks!"
+        );
+      }
+      function whatDrink() {
+        let temp = prompt("Do you want a hot or a cold beverage?");
+        if (temp === "hot" || temp === "cold") {
+          let alcContent = prompt("Do want it to be alcoholic?");
+          if (alcContent === "yes" || alcContent === "no") {
+            if (alcContent === "yes") {
+              if (temp === "hot") {
+                alert("You should definitely try some Swedish Glögg! 🍷");
+              }
+              if (temp === "cold") {
+                alert("How about some sweet Strawberry Sangria? 🍹");
+              }
+            }
+            if (alcContent === "no") {
+              if (temp === "hot") {
+                alert(
+                  "Then a hot chocolate with cream and cinnamon is your drink of choice! ☕"
+                );
+              }
+              if (temp === "cold") {
+                alert("Then we recommend a refreshing blackberry lemonade! 🧊");
+              }
+            }
+          } else {
+            alert("Please answer with 'yes' or 'no'!");
+          }
+        } else {
+          alert("Please answer with 'hot' or 'cold'!");
+        }
+      }
+
+      let whatDrinkButton = document.querySelector(".whatDrinkButton");
+      whatDrinkButton.addEventListener("click", whatDrink);
+
+      let contactButton = document.querySelector(".contactButton");
+      contactButton.addEventListener("click", contact);
+    </script>
+  </body>
+</html>

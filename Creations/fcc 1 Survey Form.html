@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About You Survey</title>
+  </head>
+  <body>
+    <h1 id="title">About You Survey</h1>
+    <p id="description">Help us to get to know you better</p>
+    <form id="survey-form" action="">
+      <label id="name-label" for="name">Name </label>
+      <input id="name" type="text" placeholder="What's your name?" required />
+      <br />
+      <label id="email-label" for="email">Email </label>
+      <input
+        id="email"
+        type="email"
+        placeholder="What's your email adress?"
+        required
+      />
+      <br />
+      <label id="number-label" for="age">Age</label>
+      <input
+        id="number"
+        type="number"
+        min="18"
+        max="140"
+        placeholder="How old are you?"
+      />
+      <br />
+      <label id="occupation" for="occupation">Occupation </label>
+      <select name="Occupation" id="dropdown">
+        <option value="student">Student</option>
+        <option value="employed">Employed</option>
+        <option value="self-employed">Self-Employed</option>
+        <option value="rich">Rich</option>
+      </select>
+      <br />
+      <div id="fruit">
+        <label for="fruit">Your Favourite Fruit</label>
+        <br />
+        <input type="radio" id="strawberry" name="fruit" value="strawberry" />
+        <label for="strawberry">Strawberry</label>
+        <input type="radio" id="banana" name="fruit" value="banana" />
+        <label for="banana">Banana</label>
+        <input type="radio" id="apple" name="fruit" value="apple" />
+        <label for="apple">Apple</label>
+        <input type="radio" id="melon" name="fruit" value="melon" />
+        <label for="melon">Melon</label>
+      </div>
+      <div id="interests">
+        <label for="interests">What are your Interests?</label>
+        <br />
+        <input type="checkbox" name="interests" id="writing" value="writing" />
+        <label for="writing">Writing</label>
+        <input type="checkbox" name="interests" id="sports" value="sports" />
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="interests" id="art" value="art" />
+        <label for="art">Art</label>
+        <input type="checkbox" name="interests" id="food" value="food" />
+        <label for="food">Food</label>
+        <input type="checkbox" name="interests" id="nature" value="nature" />
+        <label for="nature">Nature</label>
+        <input type="checkbox" name="interests" id="history" value="history" />
+        <label for="history">History</label>
+        <input type="checkbox" name="interests" id="music" value="music" />
+        <label for="music">Music</label>
+      </div>
+      <br />
+      <label for="about-you">About You!</label> <br />
+      <textarea name="about-you" id="about-you" cols="30" rows="10">
+Tell us something about yourself!
+      </textarea>
+      <br />
+      <input type="button" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
